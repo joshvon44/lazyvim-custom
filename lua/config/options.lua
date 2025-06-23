@@ -12,3 +12,14 @@ vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+
+-- 'gw' command will autoformat width to 120 characters
+vim.opt.textwidth = 120
+vim.opt.formatoptions:remove("t")
+vim.opt.formatoptions:append("c")
+
+-- Disable smooth scrolling
+-- vim.g.snacks_animate = false
+
+-- Disable autoformatting on save
+vim.g.autoformat = false
